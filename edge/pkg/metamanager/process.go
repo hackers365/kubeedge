@@ -61,7 +61,7 @@ func sendToEdged(message *model.Message, sync bool) {
 }
 
 func sendToEdgeMesh(message *model.Message, sync bool) {
-	//if edgeMesh module disabled, then return
+	// if edgeMesh module disabled, then return
 	if _, ok := core.GetModules()[modules.EdgeMeshModuleName]; !ok {
 		return
 	}
